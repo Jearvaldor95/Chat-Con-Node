@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+		integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Cursos</title>
+</head>
+
+<body>
+	<header class="card-header bg-dark">
+		<nav class="navbar justify-content-around">
+			<a class="text-white" href="index.html">CURSOS</a>
+			<a class="text-white" href="login.html">CHAT</a>
+		</nav>
+	</header>
+	<div class="card min-vh-100">
+		<main class="container w-50 bg-info mt-3 mb-2">
+			<header class="card-header">
+				<h2 class=""><i class="fas fa-smile"></i> Sala de chat de cursos de programación</h2>
+			</header>
+			<form action="chat.html">
+				<div class="form-group">
+					<label for="username">Nombre usuario</label>
+					<input class="form-control" type="text" name="usuario" id="usuario" placeholder="Enter usuario..."
+						required>
+				</div>
+				<div class="form-group">
+					<label for="curso">Elija el curso</label>
+					<select class="form-control" name="curso" id="curso">
+						<option value="JavaScript">JavaScript</option>
+						<option value="Node.js">Node.js</option>
+						<option value="Python">Python</option>
+						<option value="PHP">PHP</option>
+						<option value="C#">C#</option>
+						<option value="Ruby">Ruby</option>
+						<option value="Java">Java</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="form-control btn btn-success">Unirse al Chat</button>
+				</div>
+			</form>
+		</main>
+	</div>
+	<footer class="card-footer bg-dark">
+		<p class="text-center text-white">Todo los derechos reservados</p>
+	</footer>
+</body>
+
+</html>

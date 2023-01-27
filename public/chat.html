@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cursos</title>
+  </head>
+  <body>
+    <header class="card-header bg-dark">
+      <nav class="navbar justify-content-around">
+        <a class="text-white" href="index.html">CURSOS</a>
+        <a class="text-white" href="login.html">CHAT</a>
+      </nav>
+    </header>
+    <div class="card vh-100" >
+      <div  class="container mt-3 mb-2 w-75" id="chat-container">
+      <header class="d-flex p-2 justify-content-between">
+        <h1><i class="fas fa-smile"></i> Sala de chat</h1>
+        <a id="abandonar-btn" class="btn btn-outline-warning text-center text-dark h-25">Abandonar el chat</a>
+      </header>
+      <main class="row mb-3">
+        <div class="chat-sidebar col-md-3 px-3 mr-3">
+          <h3><i class="fas fa-comments"></i> Nombre del curso:</h3>
+          <h4 class="card container-fluid mb-4" id="curso-name"></h2>
+          <h3><i class="fas fa-users list-group"></i> Usuarios</h3>
+          <ul class="card overflow-auto" id="users" style="max-height: 12rem;"></ul>
+        </div>
+        <div class="chat-messages col-md-7 overflow-auto container-fluid bg-light py-3" style="max-height: 25rem;"></div>
+      </main>
+      <div class="form">
+        <form id="chat-form" class="container-fluid">
+          <input class="form-group w-100"
+            id="msg"
+            type="text"
+            placeholder="Enter Mensaje"
+            required
+            autocomplete="off"
+          />
+          <button class="btn btn-outline-success container-fluid mb-2"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </form>
+      </div>
+    </div>
+    </div>
+    <footer class="card-footer bg-dark">
+      <p class="text-center text-white">Todo los derechos reservados</p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/cliente.js"></script>
+  </body>
+</html>
